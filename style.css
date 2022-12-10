@@ -16,9 +16,6 @@ tr:hover {
     cursor: pointer;
 }
 
-td {
-    padding-right: 2rem;
-}
 
 .wrapper {
     display: flex;
