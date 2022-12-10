@@ -17,6 +17,10 @@ iframe {background-color: blue;}
     background-color: black;
 }
 
+nav {
+    overflow-y: hidden;
+}
+
 a {
     color: blue;
     text-decoration: none;
@@ -60,9 +64,6 @@ a:hover {
             list-style-type: none;
             margin:auto;
         }
-        
-        li {
-        } 
         
         nav a {
             padding:.5rem 3rem;
@@ -111,10 +112,7 @@ a:hover {
         list-style-type: none;
         margin:auto;
     }
-    
-    li {
-    } 
-    
+        
     nav a {
         padding:.5rem 3rem;
         z-index: 3;
