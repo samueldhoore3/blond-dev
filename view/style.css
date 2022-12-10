@@ -1,20 +1,19 @@
 /********************************************************************************************************************************/
 /* GENERAL */
 /********************************************************************************************************************************/
-/* 
+/*
 
 nav {background-color: pink;}
 iframe {background-color: blue;}
 
-
- */
+*/
 
  body {
     font-family: courier new;
     margin: 0;
     height: 100vh;
     overflow-y: hidden;
-    background-color: black;
+    /*! background-color: black; */
 }
 
 nav {
@@ -65,7 +64,7 @@ a:hover {
             margin:auto;
         }
         
-        nav a {
+        nav a{
             padding:.5rem 3rem;
             z-index: 3;
             display: inline-block;
@@ -87,7 +86,7 @@ a:hover {
 /********************************************************************************************************************************/
 @media only screen and (min-width:769px){
     nav {
-        width: 100%;
+        width: 70%;
         position: sticky;
         overflow: auto;
         background-color: white;
@@ -112,15 +111,32 @@ a:hover {
         margin:auto;
     }
         
-    nav a {
+    nav a, .resize a {
         padding:.5rem 3rem;
         z-index: 3;
         display: inline-block;
         position: relative;
     }
     
+    .resize a {
+        z-index: 4;
+        color: white;
+    }
+
+    .resize {
+        background-color: black;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    
     iframe {
-        width: 100%;
         height: 95vh;
     }
+    
 }
